@@ -1,0 +1,47 @@
+.Magnifier {
+    display: flex;
+    flex-direction: column;
+}
+.head {
+    display: flex;
+}
+.img-wrapper {
+    position: relative;
+    width: 768px;
+    height: 432px;
+    margin: 0 auto;
+    cursor: none;
+}
+.img-original {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+    mix-blend-mode: hue;
+    background-color: pink;
+}
+
+.img-zoom-lens {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.zoom {
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=range].zoomSlider {
+    writing-mode: bt-lr;
+    -webkit-appearance: slider-vertical;
+    width: 8px;
+    height: 175px;
+    padding: 0 5px;
+}
